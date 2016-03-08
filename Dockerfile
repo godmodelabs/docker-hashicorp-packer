@@ -4,6 +4,7 @@ ENV TOOL=packer \
     VERSION=0.9.0 \
     SHA256=4119d711855e8b85edb37f2299311f08c215fca884d3e941433f85081387e17c
 
+# By using ADD there is no need to install wget or curl
 ADD https://releases.hashicorp.com/${TOOL}/${VERSION}/${TOOL}_${VERSION}_linux_amd64.zip ${TOOL}_${VERSION}_linux_amd64.zip
 RUN echo "${SHA256}  ${TOOL}_${VERSION}_linux_amd64.zip" | sha256sum -cw &&\
     unzip ${TOOL}_${VERSION}_linux_amd64.zip &&\
