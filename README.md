@@ -1,7 +1,7 @@
 # docker-packer
 A busybox:glibc based Docker container running HashiCorp's packer.
 
-Just run 
+Usage examples
 ```
-docker run -it godmodelabs/packer
+docker run -it -v $HOME:/workdir packer validate /workdir/example.json
 ```
