@@ -1,4 +1,4 @@
-# docker-packer
+# docker-hashicorp-packer
 A busybox:glibc based Docker container running HashiCorp's packer.
 
 
