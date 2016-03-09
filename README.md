@@ -4,5 +4,5 @@ A busybox:glibc based Docker container running HashiCorp's packer.
 
 Usage examples
 ```
-docker run -it -v $HOME:/workdir packer validate /workdir/example.json
+docker run -it -v $HOME:/workdir godmodelabs/hashicorp-packer validate /workdir/example.json
 ```
