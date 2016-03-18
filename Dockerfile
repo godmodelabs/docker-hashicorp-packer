@@ -1,8 +1,8 @@
 FROM busybox:glibc
 MAINTAINER it-operations@boerse-go.de
 ENV TOOL=packer \
-    VERSION=0.9.0 \
-    SHA256=4119d711855e8b85edb37f2299311f08c215fca884d3e941433f85081387e17c
+    VERSION=0.10.0 \
+    SHA256=eadd33bc0f8fa42034059fc1cda5f43ed6f540746e767480f0706ebed49b45e5
 
 # By using ADD there is no need to install wget or curl
 ADD https://releases.hashicorp.com/${TOOL}/${VERSION}/${TOOL}_${VERSION}_linux_amd64.zip ${TOOL}_${VERSION}_linux_amd64.zip
